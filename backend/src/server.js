@@ -1,13 +1,18 @@
 import express from 'express';
+
+import cors from 'cors'
+import morgan from 'morgan'
+
+
+import initialWeekRouter from './routes/initialWeek.js'
+
 const app = express();
 
-app.get('/', (req, res) => {
-    const text = 'hola'
-    console.log('response to client:',text);
-    //res.status(200).send(text);
-    res.json({key: text})
-})
+app.use(express.json())
+app.use(cors())
+app.use(morgan('dev'))
 
+app.use('/initial-week', initialWeekRouter)
 
 export { app };
 
