@@ -10,6 +10,6 @@ const dbconnection = process.env.DBCONNECTION || 'mongodb://localhost:27017/trai
 mongoose.connect(dbconnection, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-}, () => console.log('connecting DB'));
+}, () => console.log('DB connected'));
 
 app.listen(port, () => console.log(`INIT SERVER ON PORT ${port} :)`))

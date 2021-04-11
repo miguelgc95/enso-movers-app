@@ -1,4 +1,4 @@
-db.initialWeeks.insertMany([
+db.initialWeek.insertMany([
 	{
 		day: "monday",
 		morning: ["Carrerita"],

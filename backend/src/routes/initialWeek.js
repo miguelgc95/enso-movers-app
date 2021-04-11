@@ -1,9 +1,9 @@
 import express from 'express';
-import { getInitialWeeks, postWeek } from '../controllers/initialWeekController.js'
+import { getInitialWeek, postWeek } from '../controllers/initialWeekController.js'
 
 const initialWeekRouter = express.Router()
 
-initialWeekRouter.get('/', getInitialWeeks)
+initialWeekRouter.get('/', getInitialWeek)
 initialWeekRouter.post('/post', postWeek)
 
 export default initialWeekRouter;

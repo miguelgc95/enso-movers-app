@@ -1,12 +1,14 @@
-import InitialWeek from '../models/Initialweek.js';
+import InitialWeek from '../models/InitialWeek.js';
 
-async function getInitialWeeks(req, res) {
+async function getInitialWeek(req, res) {
     try {
-        const initialWeeks = await InitialWeek.find()
-        console.log(initialWeeks);
-        res.json(initialWeeks)
+        //console.log(initialWeekModel.find());
+        const initialWeek = await InitialWeek.find()
+        //console.log('initialWeek:', initialWeek);
+        res.json(initialWeek)
     } catch (error) {
-        next(error)
+        console.log(error);
+        res.json(error)
     }
 }
 
@@ -20,4 +22,4 @@ async function postWeek(req, res) {
     }
 }
 
-export { getInitialWeeks, postWeek };
+export { getInitialWeek, postWeek };
