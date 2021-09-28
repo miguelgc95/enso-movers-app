@@ -1,15 +1,13 @@
-import dotenv from 'dotenv'
-import mongoose from 'mongoose';
-import { app } from './server.js'
+import app from './server.js';
+import config from './config/index.js';
+import connect from './db/index.js';
 
-dotenv.config();
+if (!config.app.port) {
+    throw new Error('App config is invalid');
+}
 
-const port = process.env.PORT || 3006;
-const dbconnection = process.env.DBCONNECTION || 'mongodb://localhost:27017/trainingProgram'
-
-mongoose.connect(dbconnection, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}, () => console.log('DB connected'));
-
-app.listen(port, () => console.log(`INIT SERVER ON PORT ${port} :)`))
+connect().then(() => {
+    app.listen(config.app.port, () => {
+        console.log(`INIT SERVER ON PORT ${config.app.port} :)`);
+    });
+});
