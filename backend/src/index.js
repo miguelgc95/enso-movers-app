@@ -11,3 +11,5 @@ connect().then(() => {
         console.log(`INIT SERVER ON PORT ${config.app.port} :)`);
     });
 });
+
+// just a comment to test
