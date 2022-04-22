@@ -1,12 +1,9 @@
-import express from 'express';
-import {
-    getInitialWeek,
-    postWeek,
-} from '../../controllers/initialWeekController.js';
+import express from 'express'
+import { getInitialWeek, postWeek } from '../../controllers/initialWeekController.js'
 
-const trainingRouter = express.Router();
+const trainingRouter = express.Router()
 
-trainingRouter.get('/', getInitialWeek);
-trainingRouter.post('/post', postWeek);
+trainingRouter.get('/', getInitialWeek)
+trainingRouter.post('/post', postWeek)
 
-export default trainingRouter;
+export default trainingRouter
