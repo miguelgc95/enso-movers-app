@@ -6,49 +6,28 @@ export default {
 	namespaced: true,
 	state() {
 		return {
+			mail: 'mike@test.com',
 			name: 'Miguel García',
 			birdth: '25-05-1995',
-			mail: 'test@gmail.com',
 			photo: 'awsedgf',
-			ID: 'sdfhb',
 			mesocycle: {
 				startingDate: 'lunes 11 abril',
 				weeks: [
 					{
-						monday: [
-							'Handstand',
-							'Movilidad isquisural',
-							'movilidad de cadera',
-							'tren superior',
-						],
+						monday: ['Handstand', 'Movilidad isquisural', 'movilidad de cadera', 'tren superior'],
 						tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
 						wednesday: ['Handstand'],
 						thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
-						friday: [
-							'Handstand',
-							'Movilidad isquisural',
-							'movilidad de torácica y GH',
-							'tren superior',
-						],
+						friday: ['Handstand', 'Movilidad isquisural', 'movilidad de torácica y GH', 'tren superior'],
 						saturday: ['Handstand'],
 						sunday: ['Handstand'],
 					},
 					{
-						monday: [
-							'Handstand',
-							'Movilidad isquisural',
-							'movilidad de cadera',
-							'tren superior',
-						],
+						monday: ['Handstand', 'Movilidad isquisural', 'movilidad de cadera', 'tren superior'],
 						tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
 						wednesday: ['Handstand'],
 						thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
-						friday: [
-							'Handstand',
-							'Movilidad isquisural',
-							'movilidad de torácica y GH',
-							'tren superior',
-						],
+						friday: ['Handstand', 'Movilidad isquisural', 'movilidad de torácica y GH', 'tren superior'],
 						saturday: ['Handstand'],
 						sunday: ['Handstand'],
 					},
@@ -64,10 +43,7 @@ export default {
 						},
 						{
 							numberOfSets: '3',
-							excersices: [
-								'B.1 - 5r HeSPU en pared',
-								'B.2 - 8-10r Dominadas ¿?kg',
-							],
+							excersices: ['B.1 - 5r HeSPU en pared', 'B.2 - 8-10r Dominadas ¿?kg'],
 						},
 					],
 				},
@@ -93,17 +69,11 @@ export default {
 					sets: [
 						{
 							numberOfSets: '2',
-							excersices: [
-								'A.1 - Warm up de muñecas',
-								'B - 30s Handstand Chest to wall',
-								'B - 30s Handstand Chest to wall',
-							],
+							excersices: ['A.1 - Warm up de muñecas', 'B - 30s Handstand Chest to wall', 'B - 30s Handstand Chest to wall'],
 						},
 						{
 							numberOfSets: '8',
-							excersices: [
-								'C - 35s Equilibrio desde tijera en HS Chest to wall',
-							],
+							excersices: ['C - 35s Equilibrio desde tijera en HS Chest to wall'],
 						},
 					],
 				},
@@ -115,13 +85,11 @@ export default {
 				},
 				{
 					blockName: 'Tren inferior',
-					blockGoals:
-						'8r Back squat (32X1) 1BW (70-75kg). 5r Pistol squat. 10r Natural leg extensions a rango completo. Sissy squats a rango completo',
+					blockGoals: '8r Back squat (32X1) 1BW (70-75kg). 5r Pistol squat. 10r Natural leg extensions a rango completo. Sissy squats a rango completo',
 				},
 				{
 					blockName: 'Handstand',
-					blockGoals:
-						'1min de HS en Straight y en Straddle. 30s Tuck HS. Consolidar transiciones y entradas.',
+					blockGoals: '1min de HS en Straight y en Straddle. 30s Tuck HS. Consolidar transiciones y entradas.',
 				},
 			],
 		};

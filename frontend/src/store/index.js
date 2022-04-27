@@ -5,8 +5,16 @@ import userModule from './modules/user';
 
 const store = createStore({
 	modules: { adminModule, userModule },
-	state: {},
-	getters: {},
+	state() {
+		return {
+			userId: 'c3',
+		};
+	},
+	getters: {
+		userId(state) {
+			return state.userId;
+		},
+	},
 	mutations: {},
 	actions: {},
 });
