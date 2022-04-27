@@ -11,51 +11,22 @@ import CreateAccount from '../pages/generic/CreateAccount.vue';
 import NotFound from '../pages/generic/NotFound.vue';
 
 const routes = [
-	{
-		path: '/',
-		redirect: '/home',
-		component: TheHome,
-	},
-	{
-		path: '/home',
-		component: TheHome,
-	},
-	{
-		path: '/trainings',
-		component: TheTrainings,
-	},
+	{ path: '/', redirect: '/home', component: TheHome },
+	{ path: '/home', component: TheHome },
+	{ path: '/trainings', component: TheTrainings },
 	{
 		path: '/:user',
 		component: UserInfo,
-		children: [
-			{
-				path: 'edit',
-				component: EditUserInfo,
-			},
-		],
+		children: [{ path: 'edit', component: EditUserInfo }],
 	},
 	{
 		path: '/admin',
 		component: UsersList,
-		children: [
-			{
-				path: ':userID/edit',
-				component: EditUserPlan,
-			},
-		],
+		children: [{ path: ':userID/edit', component: EditUserPlan }],
 	},
-	{
-		path: '/login',
-		component: TheLogin,
-	},
-	{
-		path: '/new-user',
-		component: CreateAccount,
-	},
-	{
-		path: '/notFound(*)',
-		component: NotFound,
-	},
+	{ path: '/login', component: TheLogin },
+	{ path: '/new-user', component: CreateAccount },
+	{ path: '/notFound(*)', component: NotFound },
 ];
 
 const router = createRouter({

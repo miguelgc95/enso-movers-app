@@ -1,16 +1,17 @@
 <template>
-	<section>Mesociclo</section>
-	{{ mesocycle }}
-	<section>Detalle de los bloques</section>
-	<section>Objetivos</section>
+	<div>
+		<section>
+			Mesociclo
+			<the-mesocycle></the-mesocycle>
+		</section>
+		<section>Detalle de los bloques</section>
+		<section>Objetivos</section>
+	</div>
 </template>
 
 <script>
+import TheMesocycle from '../../components/mesocycle/TheMesocycle.vue';
 export default {
-	computed: {
-		mesocycle() {
-			return this.$store.getters['userModule/mesocycle'];
-		},
-	},
+	components: { TheMesocycle },
 };
 </script>

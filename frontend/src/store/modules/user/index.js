@@ -13,44 +13,46 @@ export default {
 			ID: 'sdfhb',
 			mesocycle: {
 				startingDate: 'lunes 11 abril',
-				week1: {
-					monday: [
-						'Handstand',
-						'Movilidad isquisural',
-						'movilidad de cadera',
-						'tren superior',
-					],
-					tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
-					wednesday: ['Handstand'],
-					thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
-					friday: [
-						'Handstand',
-						'Movilidad isquisural',
-						'movilidad de torácica y GH',
-						'tren superior',
-					],
-					saturday: ['Handstand'],
-					sunday: ['Handstand'],
-				},
-				week2: {
-					monday: [
-						'Handstand',
-						'Movilidad isquisural',
-						'movilidad de cadera',
-						'tren superior',
-					],
-					tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
-					wednesday: ['Handstand'],
-					thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
-					friday: [
-						'Handstand',
-						'Movilidad isquisural',
-						'movilidad de torácica y GH',
-						'tren superior',
-					],
-					saturday: ['Handstand'],
-					sunday: ['Handstand'],
-				},
+				weeks: [
+					{
+						monday: [
+							'Handstand',
+							'Movilidad isquisural',
+							'movilidad de cadera',
+							'tren superior',
+						],
+						tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
+						wednesday: ['Handstand'],
+						thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
+						friday: [
+							'Handstand',
+							'Movilidad isquisural',
+							'movilidad de torácica y GH',
+							'tren superior',
+						],
+						saturday: ['Handstand'],
+						sunday: ['Handstand'],
+					},
+					{
+						monday: [
+							'Handstand',
+							'Movilidad isquisural',
+							'movilidad de cadera',
+							'tren superior',
+						],
+						tuesday: ['Handstand', 'tren inferior', 'Movilidad toracica y GH'],
+						wednesday: ['Handstand'],
+						thursday: ['Handstand', 'tren inferior', 'Movilidad de cadera'],
+						friday: [
+							'Handstand',
+							'Movilidad isquisural',
+							'movilidad de torácica y GH',
+							'tren superior',
+						],
+						saturday: ['Handstand'],
+						sunday: ['Handstand'],
+					},
+				],
 			},
 			blockExplanation: [
 				{
