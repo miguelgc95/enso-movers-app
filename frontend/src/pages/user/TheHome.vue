@@ -1,7 +1,6 @@
 <template>
 	<div>
 		<section>
-			Mesociclo
 			<the-mesocycle></the-mesocycle>
 		</section>
 		<section>Detalle de los bloques</section>

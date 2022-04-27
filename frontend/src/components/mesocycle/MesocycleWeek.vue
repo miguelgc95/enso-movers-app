@@ -16,8 +16,10 @@ export default {
 
 <style scoped>
 .week-wrapper {
-	margin: 10px;
 	display: flex;
-	border: 1px solid black;
+	margin: 1rem 0;
+	border: 1px solid #424242;
+	border-radius: 12px;
+	padding: 1rem;
 }
 </style>

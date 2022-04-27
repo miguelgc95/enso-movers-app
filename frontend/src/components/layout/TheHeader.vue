@@ -6,7 +6,9 @@
 				<li><router-link to="/home">Home</router-link></li>
 				<li><router-link to="/trainings">Trainings</router-link></li>
 				<li><router-link to="/userID">Personal Info</router-link></li>
-				<li><button>Logout</button></li>
+				<li>
+					<base-button mode="outline" link :to="NotFound">Logout</base-button>
+				</li>
 			</ul>
 		</nav>
 	</header>
