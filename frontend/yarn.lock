@@ -1939,8 +1939,8 @@ autoprefixer@^10.2.4:
 
 axios@^0.27.2:
   version "0.27.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
-  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  resolved "https://abbrobotics.pkgs.visualstudio.com/DigitalFactory/_packaging/DigitalFactory/npm/registry/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha1-IHZYzIYhYG5YbIXbS0GnUOdW2XI=
   dependencies:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"

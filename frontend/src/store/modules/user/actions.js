@@ -1,15 +1,14 @@
+import axios from 'axios'
+
 export default {
 	async loadUserInfo(context) {
-		const response = await fetch('http://localhost:3006/user');
-		console.log(response.data);
-		// const responseData = await response.json();
+		const response = await axios('http://localhost:3006/user')
 
-		if (!response.ok) {
-			console.log('sdfgh');
-			// const error = new Error(responseData.message || 'Failed to fetch!');
-			// throw error;
+		if (response.status != 200) {
+			const error = new Error(response.message || 'Failed to fetch!')
+			throw error
 		}
 
-		context.commit('setTest');
+		context.commit('setUserInfo', response.data)
 	},
-};
+}
