@@ -74,16 +74,20 @@ db.users.insertOne({
 	goals: [
 		{
 			blockName: 'Tren superior',
-			blockGoals: '5x5r Muscle up. 10r HeSPU en pared',
+			blockGoals: ['5x5r Muscle up', '10r HeSPU en pared'],
 		},
 		{
 			blockName: 'Tren inferior',
-			blockGoals:
-				'8r Back squat (32X1) 1BW (70-75kg). 5r Pistol squat. 10r Natural leg extensions a rango completo. Sissy squats a rango completo',
+			blockGoals: [
+				'8r Back squat (32X1) 1BW (70-75kg)',
+				'5r Pistol squat',
+				'10r Natural leg extensions a rango completo',
+				'Sissy squats a rango completo',
+			],
 		},
 		{
 			blockName: 'Handstand',
-			blockGoals: '1min de HS en Straight y en Straddle. 30s Tuck HS. Consolidar transiciones y entradas.',
+			blockGoals: ['1min de HS en Straight', '1min de HS en Straddle', '30s de HS Tuck HS', 'Consolidar transiciones y entradas.'],
 		},
 	],
 })
