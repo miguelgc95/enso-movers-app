@@ -1,16 +1,44 @@
 <template>
+	<base-dialog :show="!!error" title="An error occurred!" @close="handleError">
+		<p>{{ error }}</p>
+	</base-dialog>
 	<div>
-		<section>
+		<base-spinner v-if="isLoading"></base-spinner>
+		<div v-else>
 			<the-mesocycle></the-mesocycle>
-		</section>
-		<section>Detalle de los bloques</section>
-		<section>Objetivos</section>
+			<block-explanation></block-explanation>
+			<section>Objetivos</section>
+		</div>
 	</div>
 </template>
 
 <script>
-import TheMesocycle from '../../components/mesocycle/TheMesocycle.vue';
+import TheMesocycle from '../../components/mesocycle/TheMesocycle.vue'
+import BlockExplanation from '../../components/blocksExplanation/BlockExplanation.vue'
 export default {
-	components: { TheMesocycle },
-};
+	components: { TheMesocycle, BlockExplanation },
+	data() {
+		return {
+			isLoading: false,
+			error: null,
+		}
+	},
+	created() {
+		this.loadUserInfo()
+	},
+	methods: {
+		async loadUserInfo() {
+			this.isLoading = true
+			try {
+				await this.$store.dispatch('userModule/loadUserInfo')
+			} catch (error) {
+				this.error = error.message || 'Something went wrong!'
+			}
+			this.isLoading = false
+		},
+		handleError() {
+			this.error = null
+		},
+	},
+}
 </script>

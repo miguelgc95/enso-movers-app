@@ -1,15 +1,21 @@
 <template>
 	<ul>
 		<span class="card">
-			{{ day.charAt(0).toUpperCase() + day.slice(1) }}
+			{{ block.blockName }}
 		</span>
-		<li class="card" v-for="bloq in bloqs" :key="bloq">{{ bloq }}</li>
+		<div v-for="set in block.sets" :key="set">
+			<li class="card">{{ set.numberOfSets }} sets</li>
+			<li v-for="exercise in set.excersices" :key="exercise" class="card">{{ exercise }}</li>
+		</div>
 	</ul>
 </template>
 
 <script>
 export default {
-	props: ['bloqs', 'day'],
+	props: ['block'],
+	mounted() {
+		console.log()
+	},
 }
 </script>
 

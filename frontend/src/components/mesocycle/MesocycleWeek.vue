@@ -7,17 +7,17 @@
 </template>
 
 <script>
-import MesocycleDay from './MesocycleDay.vue';
+import MesocycleDay from './MesocycleDay.vue'
 export default {
 	props: ['week'],
 	components: { MesocycleDay },
-};
+}
 </script>
 
 <style scoped>
 .week-wrapper {
 	display: flex;
-	margin: 1rem 0;
+	margin: 0.3rem 0 1rem 0;
 	border: 1px solid #424242;
 	border-radius: 12px;
 	padding: 1rem;
