@@ -1,15 +1,17 @@
 <template>
 	<ul>
 		<span class="card">
-			{{ day.charAt(0).toUpperCase() + day.slice(1) }}
+			{{ block.blockName }}
 		</span>
-		<li class="card" v-for="block in blocks" :key="block">{{ block }}</li>
+		<div v-for="goal in block.blockGoals" :key="goal">
+			<li class="card">{{ goal }}</li>
+		</div>
 	</ul>
 </template>
 
 <script>
 export default {
-	props: ['blocks', 'day'],
+	props: ['block'],
 }
 </script>
 

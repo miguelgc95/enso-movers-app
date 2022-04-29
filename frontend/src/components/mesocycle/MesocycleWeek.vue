@@ -1,7 +1,7 @@
 <template>
 	<div class="week-wrapper">
-		<div v-for="(bloqs, day) in week" :key="day">
-			<mesocycle-day :bloqs="bloqs" :day="day"></mesocycle-day>
+		<div v-for="(blocks, day) in week" :key="day">
+			<mesocycle-day :blocks="blocks" :day="day"></mesocycle-day>
 		</div>
 	</div>
 </template>

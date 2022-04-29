@@ -7,7 +7,7 @@
 		<div v-else>
 			<the-mesocycle></the-mesocycle>
 			<block-explanation></block-explanation>
-			<section>Objetivos</section>
+			<the-goals>Objetivos</the-goals>
 		</div>
 	</div>
 </template>
@@ -15,8 +15,9 @@
 <script>
 import TheMesocycle from '../../components/mesocycle/TheMesocycle.vue'
 import BlockExplanation from '../../components/blocksExplanation/BlockExplanation.vue'
+import TheGoals from '@/components/goals/TheGoals.vue'
 export default {
-	components: { TheMesocycle, BlockExplanation },
+	components: { TheMesocycle, BlockExplanation, TheGoals },
 	data() {
 		return {
 			isLoading: false,
